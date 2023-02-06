@@ -40,7 +40,7 @@ const MovieDetails = () => {
             </div>
         </div>
         <Link to={'/'}>
-             <h2>Go Back...</h2>
+             <button>Go Back...</button>
         </Link>
         
         </>
