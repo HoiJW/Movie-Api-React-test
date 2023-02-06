@@ -23,7 +23,7 @@ const Catalogue = () => {
       setMovie(res.data.results);
       console.log(movie);
     }) 
-  },[]);
+  },[movie]);
     
     return(
         <div>
