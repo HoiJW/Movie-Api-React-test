@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Catalogue = () => {
     //step 2 :movie state set for storing movie using setMovie
@@ -30,12 +31,10 @@ const Catalogue = () => {
             <ul className='catalogue'>
           {//step3: use map to return data and render out the object
             movie.map((movie)=>
-              <li className='poster'
-              key={movie.id}>
-            <img 
-              src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-              alt={`Poster for ${movie.original_title}`} 
-            />
+              <li key={movie.id}>
+                <Link to={`/movie/${movie.id}`}>
+                <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}alt={`Poster for ${movie.original_title}`} />
+                </Link>
               </li>
             )
           }

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import { useParams } from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 const MovieDetails = () => {
     
     const{ movieID } = useParams()
@@ -24,6 +24,7 @@ const MovieDetails = () => {
 
     const { original_title, tagline, overview, poster_path, release_date } = movie;
     return(
+         <>
          <div className="poster">
             <div className="description">
                 <h2>{original_title}</h2>
@@ -38,6 +39,11 @@ const MovieDetails = () => {
                 />
             </div>
         </div>
+        <Link to={'/'}>
+             <h2>Go Back...</h2>
+        </Link>
+        
+        </>
     )
 }
 export default MovieDetails;
