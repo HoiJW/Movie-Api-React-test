@@ -101,3 +101,29 @@ ul.catalogue {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
+
+button{
+background-color: rgba(0,0,0,.816);
+background-image: none;
+border: 1px solid #000;
+border-radius: 4px;
+box-shadow: 4px 4px 0 0 #6e6e6e,4px 4px 0 1px #000;
+box-sizing: border-box;
+color: #fff;
+display: inline-block;
+font-weight: 400;
+line-height: 20px;
+margin: 0 5px 10px 0;
+overflow: visible;
+padding: 12px 40px;
+text-align: center;
+text-transform: none;
+vertical-align: middle;
+white-space: nowrap;
+transition: 0.2s;
+}
+button:hover{
+  box-shadow: 2px 8px 8px -5px rgba(107, 106, 106, 0.3);
+-webkit-transform: translate3d(0,2px,0);
+transform: translate3d(0,2px,0);
+}
