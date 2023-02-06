@@ -30,7 +30,7 @@ const Catalogue = () => {
             <ul className='catalogue'>
           {//step3: use map to return data and render out the object
             movie.map((movie)=>
-              <li className='.poster'
+              <li className='poster'
               key={movie.id}>
             <img 
               src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}

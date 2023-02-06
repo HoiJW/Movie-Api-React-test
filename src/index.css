@@ -49,6 +49,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+  margin: 1.5%;
+}
+.poster:hover{
+  scale: 1.05;
 }
 
 .description {
